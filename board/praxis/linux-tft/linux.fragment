@@ -1,0 +1,19 @@
+# Enable driver for RTL8367RB
+CONFIG_IPV6=n
+CONFIG_BRIDGE=y
+CONFIG_NET_DSA=y
+CONFIG_NET_DSA_REALTEK=y
+#CONFIG_NET_DSA_REALTEK_SMI=y
+CONFIG_NET_DSA_REALTEK_MDIO=y
+CONFIG_NET_DSA_REALTEK_RTL8365MB=y
+
+# Enable USB to Serial driver
+CONFIG_USB_SERIAL_CH34=m
+CONFIG_USB_SERIAL_CP210X=m
+
+#Enable Debug
+CONFIG_DYNAMIC_DEBUG=y        # build catalog, enables CORE
+CONFIG_DYNAMIC_DEBUG_CORE=y   # enable mechanics only, skip catalog
+
+#Disable unused configuration
+
